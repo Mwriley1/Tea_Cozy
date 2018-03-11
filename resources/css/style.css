@@ -8,9 +8,19 @@
 body {
   font: 22px Helvetica, sans-serif;
   color: seashell;
-  background-color: black;
   opacity: 0.9;
   text-align: center;
+}
+
+body,
+header,
+.overlay {
+  background-color: black;
+}
+
+main {
+  position: relative;
+  top: 70px;
 }
 
 a {
@@ -33,6 +43,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid seashell;
+  z-index: 2;
 }
 
 header img,
@@ -49,20 +60,33 @@ header nav {
 .mission {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 70px;
   height: 700px;
   margin: 0 auto;
   background-image: url("../images/img-mission-background.jpg");
 }
 
-.overlay {
-  background-color: black;
-}
-
 /* Feature Section Styles */
 
 .feature {
-  position: relative;
-  top: 70px;
+  width: 1000px;
+  margin: 60px auto;
+}
+
+.feature-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-content img {
+  width: 300px;
+  height: 200px;
+}
+
+.feature-item {
+  margin: 10px;
+}
+
+figcaption {
+  padding: 10px 0;
 }
