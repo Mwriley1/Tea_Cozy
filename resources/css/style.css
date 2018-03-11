@@ -1,3 +1,5 @@
+/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,18 @@ body {
   text-align: center;
 }
 
+a {
+  color: inherit;
+  padding: 0 10px;
+}
+
+h2,
+h4 {
+  padding: 10px 0;
+}
+
+/* Header Styles */
+
 header {
   position: fixed;
   height: 69px;
@@ -21,11 +35,34 @@ header {
   border-bottom: 1px solid seashell;
 }
 
-a {
-  color: inherit;
-}
-
 header img,
 header nav {
   padding: 0 10px;
+}
+
+/* Mission Section Styles */
+
+.mission, .overlay {
+  width: 1200px;
+}
+
+.mission {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url("../images/img-mission-background.jpg");
+}
+
+.overlay {
+  background-color: black;
+}
+
+/* Feature Section Styles */
+
+.feature {
+  position: relative;
+  top: 70px;
 }
