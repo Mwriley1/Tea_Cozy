@@ -19,18 +19,19 @@ header,
   background-color: black;
 }
 
-main {
+main,
+footer {
   position: relative;
   top: 70px;
 }
 
 a {
   color: inherit;
-  padding: 0 10px;
 }
 
 h2,
-h4 {
+h4,
+h5 {
   padding: 15px 0;
 }
 
@@ -48,7 +49,8 @@ header {
 }
 
 header img,
-header nav {
+header nav,
+a {
   padding: 0 10px;
 }
 
@@ -118,4 +120,16 @@ figcaption {
 
 .place p {
   padding: 20px 0;
+}
+
+/* Footer Styles */
+
+.contact-info {
+  height: 200px;
+}
+
+.copyright {
+  float: left;
+  margin-left: 20px;
+  margin-top: 40px;
 }
