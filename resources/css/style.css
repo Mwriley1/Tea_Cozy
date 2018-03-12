@@ -14,7 +14,8 @@ body {
 
 body,
 header,
-.overlay {
+.overlay,
+.place {
   background-color: black;
 }
 
@@ -30,7 +31,7 @@ a {
 
 h2,
 h4 {
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 /* Header Styles */
@@ -92,3 +93,29 @@ figcaption {
 }
 
 /* Location Section Styles */
+
+.locations {
+  background-image: url("../images/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.location-content {
+  display: flex;
+  justify-content: center;
+}
+
+.place {
+  width: 300px;
+  margin: 0 20px;
+  padding: 20px 0;
+  opacity: 1;
+}
+
+.place p {
+  padding: 20px 0;
+}
